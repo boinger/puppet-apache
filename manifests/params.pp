@@ -53,6 +53,7 @@ class apache::params {
     $passenger_ruby       = '/usr/bin/ruby'
     $mod_packages         = {
       'auth_kerb'  => 'mod_auth_kerb',
+      'dav_svn'    => 'mod_dav_svn',
       'fcgid'      => 'mod_fcgid',
       'passenger'  => 'mod_passenger',
       'perl'       => 'mod_perl',
@@ -64,8 +65,8 @@ class apache::params {
       'python'     => 'mod_python',
       'shibboleth' => 'shibboleth',
       'ssl'        => 'mod_ssl',
+      'range'      => 'mod_range',
       'wsgi'       => 'mod_wsgi',
-      'dav_svn'    => 'mod_dav_svn',
       'xsendfile'  => 'mod_xsendfile',
     }
     $mod_libs             = {
@@ -97,14 +98,15 @@ class apache::params {
     $passenger_ruby   = '/usr/bin/ruby'
     $mod_packages     = {
       'auth_kerb'  => 'libapache2-mod-auth-kerb',
+      'dav_svn'    => 'libapache2-svn',
       'fcgid'      => 'libapache2-mod-fcgid',
       'passenger'  => 'libapache2-mod-passenger',
       'perl'       => 'libapache2-mod-perl2',
       'php5'       => 'libapache2-mod-php5',
       'proxy_html' => 'libapache2-mod-proxy-html',
       'python'     => 'libapache2-mod-python',
+      'range'      => 'libapache2-mod-range',
       'wsgi'       => 'libapache2-mod-wsgi',
-      'dav_svn'    => 'libapache2-svn',
       'xsendfile'  => 'libapache2-mod-xsendfile',
     }
     $mod_libs         = {
