@@ -1,6 +1,7 @@
 define apache::mod (
   $package = undef,
-  $lib = undef
+  $lib = undef,
+  $source = undef
 ) {
   if ! defined(Class['apache']) {
     fail('You must include the apache base class before using any apache defined resources')
